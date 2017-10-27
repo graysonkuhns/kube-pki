@@ -1,0 +1,9 @@
+# Version control
+.git/
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Maven
+target/
