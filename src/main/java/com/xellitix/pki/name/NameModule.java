@@ -15,8 +15,12 @@ public class NameModule extends AbstractModule {
    */
   @Override
   protected void configure() {
+    // Name factory
     install(new FactoryModuleBuilder()
       .implement(Name.class, DefaultName.class)
       .build(NameFactory.class));
+
+    // Name parser
+    bind(NameParser.class).to(DefaultNameParser.class);
   }
 }

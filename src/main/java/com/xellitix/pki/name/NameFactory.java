@@ -19,9 +19,9 @@ public interface NameFactory {
    * @param organizationalUnit The organizational unit.
    * @return The {@link Name}.
    */
-  Name createName(@Assisted("country") String country,
-                  @Assisted("state") String state,
-                  @Assisted("locality") String locality,
-                  @Assisted("organization") String organization,
-                  @Assisted("organizationalUnit") String organizationalUnit);
+  Name create(@Assisted("country") String country,
+              @Assisted("state") String state,
+              @Assisted("locality") String locality,
+              @Assisted("organization") String organization,
+              @Assisted("organizationalUnit") String organizationalUnit);
 }

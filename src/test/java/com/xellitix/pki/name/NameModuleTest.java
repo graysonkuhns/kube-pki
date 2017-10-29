@@ -20,6 +20,11 @@ public class NameModuleTest {
     injector.getInstance(NameFactory.class);
   }
 
+  @Test
+  public void getNameParserTest() {
+    injector.getInstance(NameParser.class);
+  }
+
   @Before
   public void setUp() {
     injector = Guice.createInjector(new NameModule());
