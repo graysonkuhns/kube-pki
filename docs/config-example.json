@@ -1,0 +1,48 @@
+{
+    "k8s": {
+        "compute": {
+            "masters": {
+                "master0.k8s.acmecorp.com": [
+                    "192.168.0.1",
+                    "10.200.0.1"
+                ],
+                "master1.k8s.acmecorp.com": [
+                    "192.168.0.2",
+                    "10.200.0.2"
+                ],
+                "master2.k8s.acmecorp.com": [
+                    "192.168.0.3",
+                    "10.200.0.3"
+                ]
+            },
+            "workers": {
+                "worker0.k8s.acmecorp.com": [
+                    "192.168.0.4",
+                    "10.200.0.4"
+                ],
+                "worker1.k8s.acmecorp.com": [
+                    "192.168.0.5",
+                    "10.200.0.5"
+                ],
+                "worker2.k8s.acmecorp.com": [
+                    "192.168.0.6",
+                    "10.200.0.6"
+                ]
+            }
+        },
+        "network": {
+            "serv": "10.30.0.0/16"
+        }
+    },
+    "pkiGeneration": {
+        "certExpiry": "8760h",
+        "keySize": "4096",
+        "defaultName": {
+            "country": "United States",
+            "state": "Missouri",
+            "locality": "Kansas City",
+            "organization": "ACME Corporation",
+            "organizationalUnit": "Cloud Computing Division"
+        }
+    }
+}
